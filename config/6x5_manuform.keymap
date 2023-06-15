@@ -57,7 +57,7 @@
    &trans  &kp RA(NUMBER_2)  &kp RA(N3)             &none       &none        &kp KP_NUM  &kp F1            &kp F2            &kp F3    &kp F4          &kp F5       &kp F11
    &trans        &kp RA(N7)  &kp RA(N0)  &kp RA(NUMBER_8)  &kp RA(N9)             &none   &none  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)     &none           &none  &kp LEFT_WIN
 &kp COMMA  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)   &none  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)     &none          &kp UP         &none
-   &trans         &kp GRAVE       &none            &trans      &trans            &trans  &trans            &trans            &trans  &kp LEFT  &kp DOWN_ARROW     &kp RIGHT
+   &trans         &kp GRAVE       &none             &none      &trans            &trans  &trans            &trans            &trans  &kp LEFT  &kp DOWN_ARROW     &kp RIGHT
    &trans            &trans      &trans            &trans      &trans            &trans  &trans            &trans            &trans    &trans          &trans        &trans
             >;
         };
