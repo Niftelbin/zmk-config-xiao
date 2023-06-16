@@ -42,11 +42,11 @@
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 
             bindings = <
-         &trans     &kp F5    &kp F6    &kp F11    &kp F12         &kp F9         &kp PIPE        &kp ENTER       &kp PERIOD  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG
-         &trans    &kp DEL    &kp UP   &kp BSPC   &kp HOME    &kp PAGE_UP  &kp KP_MULTIPLY  &kp KP_NUMBER_1        &kp KP_N2   &kp KP_NUMBER_3      &kp KP_DIVIDE          &kp ASTRK
-       &kp HASH   &kp LEFT  &kp DOWN  &kp RIGHT    &kp END  &kp PAGE_DOWN  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6        &kp KP_PLUS           &kp LPAR
-&kp EXCLAMATION  &kp GRAVE  &kp NUHS   &kp NUBS  &kp EQUAL      &kp ENTER       &kt LS(N0)  &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9             &trans    &kp KP_SUBTRACT
-         &trans     &trans    &trans     &trans     &trans         &trans           &trans           &trans           &trans            &trans             &trans             &trans
+         &trans     &kp F5    &kp F6       &kp F11    &kp F12         &kp F9     &kp RA(NUBS)        &kp ENTER       &kp PERIOD  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG
+         &trans    &kp DEL    &kp UP      &kp BSPC   &kp HOME    &kp PAGE_UP  &kp KP_MULTIPLY  &kp KP_NUMBER_1        &kp KP_N2   &kp KP_NUMBER_3      &kp KP_DIVIDE          &kp ASTRK
+       &kp NUHS   &kp LEFT  &kp DOWN     &kp RIGHT    &kp END  &kp PAGE_DOWN  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6        &kp KP_PLUS           &kp LPAR
+&kp EXCLAMATION  &kp GRAVE  &kp NUBS  &kp LS(NUBS)  &kp EQUAL      &kp ENTER       &kt LS(N0)  &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9             &trans    &kp KP_SUBTRACT
+         &trans     &trans    &trans        &trans     &trans         &trans           &trans           &trans           &trans            &trans             &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -54,21 +54,21 @@
 
         layer_2 {
             bindings = <
-   &trans  &kp RA(NUMBER_2)  &kp RA(N3)             &none       &none        &kp KP_NUM  &kp F1            &kp F2            &kp F3    &kp F4          &kp F5       &kp F11
-   &trans        &kp RA(N7)  &kp RA(N0)  &kp RA(NUMBER_8)  &kp RA(N9)             &none   &none  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)     &none           &none  &kp LEFT_WIN
-&kp COMMA  &kp LS(NUMBER_2)  &kp LS(N3)        &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)   &none  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)     &none          &kp UP         &none
-   &trans         &kp GRAVE       &none             &none      &trans         &kp ENTER   &none             &none             &none  &kp LEFT  &kp DOWN_ARROW     &kp RIGHT
-   &trans            &trans      &trans            &trans      &trans            &trans  &trans            &trans            &trans    &trans          &trans        &trans
+   &trans  &kp RA(NUMBER_2)    &kp RA(N3)             &none          &none        &kp KP_NUM  &kp F1            &kp F2            &kp F3    &kp F4          &kp F5       &kp F11
+   &trans        &kp RA(N7)    &kp RA(N0)  &kp RA(NUMBER_8)     &kp RA(N9)             &none   &none  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)     &none           &none  &kp LEFT_WIN
+&kp COMMA  &kp LS(NUMBER_2)    &kp LS(N3)        &kp LS(N4)     &kp LS(N5)  &kp LS(NUMBER_6)   &none  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)     &none          &kp UP         &none
+   &trans     &kp LS(GRAVE)  &kp RA(RBKT)     &kp RA(MINUS)  &kp LS(EQUAL)         &kp ENTER   &none             &none             &none  &kp LEFT  &kp DOWN_ARROW     &kp RIGHT
+   &trans            &trans        &trans            &trans         &trans            &trans  &trans            &trans            &trans    &trans          &trans        &trans
             >;
         };
 
         layer_3 {
             bindings = <
-  &kp ESC  &kp KP_SUBTRACT      &kp KP_PLUS     &kp ASTERISK  &kp LEFT_PARENTHESIS                &none  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bootloader
-  &kp TAB    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp RS(KP_ASTERISK)         &none             &none             &none         &none         &none  &kp LEFT_WIN
-    &none       &kp KP_DOT  &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6      &kp KP_NUMBER_0         &none             &none             &none         &none        &kp UP         &none
-&kp ENTER          &kp DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3     &kp LS(NUMBER_0)         &none  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)      &kp LEFT      &kp DOWN     &kp RIGHT
-   &trans           &trans           &trans           &trans                &trans               &trans        &trans            &trans            &trans        &trans        &trans        &trans
+      &kp ESC  &kp KP_SUBTRACT      &kp KP_PLUS     &kp ASTERISK  &kp LEFT_PARENTHESIS                &none  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bootloader
+      &kp TAB    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8       &kp KP_NUMBER_9  &kp RS(KP_ASTERISK)         &none             &none             &none         &none         &none  &kp LEFT_WIN
+&kp LS(COMMA)       &kp KP_DOT  &kp KP_NUMBER_4  &kp KP_NUMBER_5       &kp KP_NUMBER_6      &kp KP_NUMBER_0         &none             &none             &none         &none        &kp UP         &none
+    &kp ENTER          &kp DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2       &kp KP_NUMBER_3     &kp LS(NUMBER_0)         &none  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)      &kp LEFT      &kp DOWN     &kp RIGHT
+       &trans           &trans           &trans           &trans                &trans               &trans        &trans            &trans            &trans        &trans        &trans        &trans
             >;
         };
     };
